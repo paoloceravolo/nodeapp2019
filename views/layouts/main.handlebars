@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prima pagina web</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- <script type="text/javascript" src="comments.js"></script>-->
+</head>
+<body>
+  <header>
+    <h1 style="clor:red">Prima pagina web</h1>
+    <!-- ATTENZIONE sintassi putnata è diversa da quella di JSON-->
+    <h3>{{subtitle}}</h3>
+    <!--
+      <h3>{{data.[3].name}}</h3>{{!----}}-->
+    <div id="myclock" class="clock"></div>
+    <div>
+      <span>THEME</span>
+      <button id="light" value="light">LIGHT</button>
+      <button id="dark" value="dark">DARK</button>
+
+      <div><input type="file" id="chooseFile"></input></div>
+    </div>
+  </header>
+
+ {{{body}}}
+
+  <nav>
+    <ul>
+      <li id="continput">
+        <label for="i1"><span id="icon1"></span></label>
+        <input id="i1" type="text" name="">
+      </li>
+      <li><a href="#">Primo Elemento</a></li>
+      <li><a href="#">Secondo Elemento</a></li>
+      <li><a href="#">Terzo Elemento</a></li>
+    </ul>
+  </nav>
+
+  <footer>@Credits</footer>
+  <script src="clock.js">
+  </script>
+  <script src="localstorage.js">
+  </script>
+
+  <script src="ajax.js"></script>
+
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+  </script>
+
+  <!-- with callback call
+  <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAymd_hyKvWoJFgB8bP6n-1HStQJIjWdVo&callback=initMap">
+  </script> -->
+
+  <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAymd_hyKvWoJFgB8bP6n-1HStQJIjWdVo&callback=tlMap">
+  </script>
+
+</body>
+</html>

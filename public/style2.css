@@ -1,0 +1,161 @@
+body {font-family: Futura}
+
+/* Impaginazione */
+
+header {
+	background-color: #6e7854;
+}
+
+nav {
+	background-color: #008880;
+	width: 15%;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+button {
+	padding: 10px 20px;
+	border: none;
+	margin: 3px 3px 3px 3px;
+	opacity: 0.8;
+	border: transparent 1px solid;
+}
+
+button#light {background-color: white}
+button#dark {background-color: rgb(00,00,33,90%);color:white;}
+
+.clock {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    color: black;
+    font-size: 20px;
+    font-family: Futura;
+    letter-spacing: 10px;
+    background-color: rgba(142,131,168,0.5);
+    padding: 0.3em;
+}
+
+#content {
+	background-color: #84b1aa;
+	width: 80%;
+	display: inline-block;
+	position: relative;
+}
+
+footer {
+	background-color: #ffd700;
+	display: block;
+	position: sticky;
+	bottom: 0px;
+}
+
+/* Disegno e animazione */
+
+#icon1{
+	font-size: 1em;
+	display: inline-block;
+	width: 0.5em;
+	height: 0.5em;
+	border: 0.2em solid rgba(218,208,190,1);
+	border-radius: 0.8em;
+	position: relative;
+}
+
+#icon1:hover::before{
+	background-color: blue;
+}
+
+#icon1:hover{
+	border-color: blue;
+}
+
+
+#icon1:before{
+	content:"";
+	display: inline-block;
+	position: absolute;
+	width: 0.5em;
+	height: 0.2em;
+	transform: rotate(45deg);
+	background: rgba(218,208,190,1);
+	right: -0.5em;
+	bottom: -0.3em;
+	border-width:0; 
+}
+
+#continput{
+	display: inline-block;
+	font-size: 1em;
+	border-radius: 8em;
+	background: white;
+	padding: 0.2em;
+	margin: 0.3em;
+}
+
+#continput:hover ~ li{
+	color: rgba(218,208,190,1);
+}
+
+#i1{
+	width: 1px;
+	border-radius: 0;
+	outline: none;
+	border: 0;
+	background-color: transparent; 
+}
+
+#i1:focus{
+	width: 80%;
+	transition: all 1s ease-out;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px){
+	#content {
+		width: 80%;
+	}
+	nav {
+		width: 17%;
+	}
+
+}
+
+@media screen and (max-width: 667px){
+	#content {
+		width: auto;
+	}
+	nav {
+		display: block;
+		width: auto;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+
+	body{ 
+		font-size: 14px;
+	 }
+	#content {
+		width: auto;
+	}
+	nav {
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
